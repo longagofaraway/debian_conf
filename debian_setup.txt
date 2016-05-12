@@ -1,0 +1,18 @@
+su
+apt-get install sudo
+adduser debian sudo
+exit
+
+sudo apt-get update
+sudo apt-get install vim
+sudo apt-get install mlocate
+
+echo PATH=\"\$PATH:/sbin\"\;export >> ~/.bash_login
+echo 'set bell-style none' >> ~/.inputrc
+logout
+
+
+#desktop 
+sudo apt-get install xorg
+sudo apt-get install fvwm
+
