@@ -9,6 +9,7 @@ sudo apt-get install mlocate
 
 echo PATH=\"\$PATH:/sbin\"\;export >> ~/.bash_login
 echo 'set bell-style none' >> ~/.inputrc
+sudo echo set noeb vb t_vb= >> /etc/vim/vimrc
 logout
 
 
