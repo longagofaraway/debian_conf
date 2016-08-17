@@ -1,15 +1,20 @@
 su
 apt-get install sudo
 adduser debian sudo
-exit
 
-sudo apt-get update
-sudo apt-get install vim
-sudo apt-get install mlocate
+apt-get update
+apt-get install vim
+apt-get install mlocate
 
 echo PATH=\"\$PATH:/sbin\"\;export >> ~/.bash_login
 echo 'set bell-style none' >> ~/.inputrc
-sudo echo set noeb vb t_vb= >> /etc/vim/vimrc
+echo set noeb vb t_vb= >> /etc/vim/vimrc
+echo set tabstop=4 >> /etc/vim/vimrc
+echo filetype plugin indent on >> /etc/vim/vimrc
+echo set shifwtidth=4 >> /etc/vim/vimrc
+echo set expandtab >> /etc/vim/vimrc
+echo syntax on >> /etc/vim/vimrc
+exit
 logout
 
 
