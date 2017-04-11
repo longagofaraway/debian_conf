@@ -6,7 +6,7 @@ apt-get update
 apt-get install vim
 apt-get install mlocate
 
-echo PATH=\"\$PATH:/sbin\"\;export >> ~/.bash_login
+echo PATH=\"\$PATH:/sbin\"\;export PATH >> ~/.profile
 echo 'set bell-style none' >> ~/.inputrc
 echo set noeb vb t_vb= >> /etc/vim/vimrc
 echo set tabstop=4 >> /etc/vim/vimrc
