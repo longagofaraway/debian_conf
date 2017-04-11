@@ -13,12 +13,12 @@ echo set tabstop=4 >> /etc/vim/vimrc
 echo filetype plugin indent on >> /etc/vim/vimrc
 echo set shifwtidth=4 >> /etc/vim/vimrc
 echo set expandtab >> /etc/vim/vimrc
+echo set smarttab >> /etc/vim/vimrc
 echo syntax on >> /etc/vim/vimrc
 exit
 logout
 
 
 #desktop 
-sudo apt-get install xorg
-sudo apt-get install fvwm
+awesome + tilda
 
