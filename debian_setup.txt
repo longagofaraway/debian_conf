@@ -14,7 +14,7 @@ echo filetype plugin indent on >> /etc/vim/vimrc
 echo set shifwtidth=4 >> /etc/vim/vimrc
 echo set expandtab >> /etc/vim/vimrc
 echo set smarttab >> /etc/vim/vimrc
-echo t_Co=256 >> /etc/vim/vimrc
+echo set t_Co=256 >> /etc/vim/vimrc
 echo set laststatus=2 >> /etc/vim/vimrc
 echo background=dark >> /etc/vim/vimrc
 echo syntax on >> /etc/vim/vimrc
@@ -35,6 +35,7 @@ gruvbox
 vim-arline
 vim-arline-themes
 xfce4 set bg color #282828
+echo hi Normal ctermbg=NONE >> ~/.vimrc
 change wallpaper in /usr/share/awesome/themes/default/theme.lua
 
  
