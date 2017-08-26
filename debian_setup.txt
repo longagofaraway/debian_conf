@@ -8,6 +8,8 @@ apt-get install mlocate
 
 echo PATH=\"\$PATH:/sbin\"\;export PATH >> /home/debian/.profile
 echo 'set bell-style none' >> ~/.inputrc
+
+#vim
 echo set noeb vb t_vb= >> /etc/vim/vimrc
 echo set tabstop=4 >> /etc/vim/vimrc
 echo filetype plugin indent on >> /etc/vim/vimrc
@@ -18,6 +20,10 @@ echo set t_Co=256 >> /etc/vim/vimrc
 echo set laststatus=2 >> /etc/vim/vimrc
 echo background=dark >> /etc/vim/vimrc
 echo syntax on >> /etc/vim/vimrc
+
+#prevent the creation of default folders
+sed -i s/enabled=True/enabled=False/g /etc/xdg/user-dirs.conf
+
 exit
 logout
 
