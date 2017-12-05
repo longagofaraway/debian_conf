@@ -24,6 +24,9 @@ echo syntax on >> /etc/vim/vimrc
 #prevent the creation of default folders
 sed -i s/enabled=True/enabled=False/g /etc/xdg/user-dirs.conf
 
+#keyboard rate
+xset r rate 150 33
+
 exit
 logout
 
