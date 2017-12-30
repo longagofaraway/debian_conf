@@ -13,7 +13,7 @@ echo 'set bell-style none' >> ~/.inputrc
 echo set noeb vb t_vb= >> /etc/vim/vimrc
 echo set tabstop=4 >> /etc/vim/vimrc
 echo filetype plugin indent on >> /etc/vim/vimrc
-echo set shifwtidth=4 >> /etc/vim/vimrc
+echo set shiftwidth=4 >> /etc/vim/vimrc
 echo set expandtab >> /etc/vim/vimrc
 echo set smarttab >> /etc/vim/vimrc
 echo set t_Co=256 >> /etc/vim/vimrc
@@ -25,17 +25,17 @@ echo syntax on >> /etc/vim/vimrc
 sed -i s/enabled=True/enabled=False/g /etc/xdg/user-dirs.conf
 
 #keyboard rate
-xset r rate 150 33
+xset r rate 177 33
 
 exit
 logout
 
 
 #desktop 
-apt-get install xorg
-apt-get install awesome
-apt-get install xfce4-terminal
-apt-get install xcompmgr
+sudo apt-get install xorg
+sudo apt-get install awesome
+sudo apt-get install xfce4-terminal
+sudo apt-get install xcompmgr
 
 
 Vundle
