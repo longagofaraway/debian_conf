@@ -6,6 +6,18 @@ apt-get update
 apt-get install vim
 apt-get install mlocate
 
+# or compile vim from source
+#./configure  --with-features=huge\
+              --enable-multibyte\
+              --enable-rubyinterp=yes\
+              --enable-pythoninterp=yes\
+              --with-python-config-dir=/usr/lib/python2.7/config-x86_64-linux-gnu\
+              --enable-perlinterp=yes\
+              --enable-luainterp=yes\
+              --enable-gui=gtk2\
+              --enable-cscope\
+              --prefix=/usr
+#make VIMRCLOC=/etc VIMRUNTIMEDIR=/usr/share/vim/vim80 MAKE="make -e"
 echo PATH=\"\$PATH:/sbin\"\;export PATH >> /home/debian/.profile
 echo 'set bell-style none' >> ~/.inputrc
 
@@ -47,4 +59,8 @@ xfce4 set bg color #282828
 echo hi Normal ctermbg=NONE >> ~/.vimrc
 change wallpaper in /usr/share/awesome/themes/default/theme.lua
 
- 
+# fonts needed for gruvbox
+git clone https://github.com/powerline/fonts
+cd fonts
+./install.sh 
+# reopen terminal and choose 'Source Code...' font in terminal settings
