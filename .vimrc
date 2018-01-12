@@ -25,7 +25,7 @@ set shiftwidth=4
 "set expandtab
 set smarttab
 set t_Co=256
-"set laststatus=2
+set laststatus=2
 set background=dark
 set backspace=indent,eol,start
 
@@ -38,6 +38,7 @@ let g:ctrlp_working_path_mode = 'r'
 
 "youCompleteMe config
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let g:ycm_autoclose_preview_window_after_completion=1
 
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
@@ -47,3 +48,6 @@ let g:airline_theme='gruvbox'
 " Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_powerline_fonts              = 1
+set mouse=a
+set scrolloff=5
+set incsearch
