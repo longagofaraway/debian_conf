@@ -1,0 +1,5 @@
+./uncrustify.py
+git add -u
+git commit --amend
+#git commit --fixup HEAD
+#git rebase -i --autosquash HEAD~2
