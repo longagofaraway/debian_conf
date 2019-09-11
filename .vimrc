@@ -51,3 +51,6 @@ let g:airline_powerline_fonts              = 1
 set mouse=a
 set scrolloff=5
 set incsearch
+
+" Allow switch from unsaved buffer
+set hidden
