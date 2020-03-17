@@ -50,7 +50,7 @@ sudo apt-get install xcompmgr
 echo os.execute\(\"vmware-user\"\) >> ~/.config/awesome/rc.lua
 echo os.execute\(\"xcompmgr &\"\) >> ~/.config/awesome/rc.lua
 echo os.execute\(\"xset r rate 177 33\"\) >> ~/.config/awesome/rc.lua
-echo os.execute\(\"setxkbmap -layout \"us,ru\" -option \"grp:alt_shift_toggle\"\"\) >> ~/.config/awesome/rc.lua
+echo os.execute\(\"setxkbmap -layout \\\"us,ru\\\" -option \\\"grp:alt_shift_toggle\\\"\"\) >> ~/.config/awesome/rc.lua
 
 Vundle
 xfce4-solarized
