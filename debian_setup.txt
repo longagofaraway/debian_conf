@@ -6,7 +6,7 @@ apt-get update
 apt-get install vim
 apt-get install mlocate
 
-# or compile vim from source
+# or compile vim from source (required for youCompleteMe)
 #./configure  --with-features=huge\
               --enable-multibyte\
               --enable-rubyinterp=yes\
@@ -30,7 +30,6 @@ echo set expandtab >> /etc/vim/vimrc
 echo set smarttab >> /etc/vim/vimrc
 echo set t_Co=256 >> /etc/vim/vimrc
 echo set laststatus=2 >> /etc/vim/vimrc
-echo background=dark >> /etc/vim/vimrc
 echo syntax on >> /etc/vim/vimrc
 
 #prevent the creation of default folders
@@ -57,7 +56,6 @@ xfce4-solarized
 gruvbox
 vim-arline
 vim-arline-themes
-xfce4 set bg color #282828
 echo hi Normal ctermbg=NONE >> ~/.vimrc
 change wallpaper in /usr/share/awesome/themes/default/theme.lua
 
