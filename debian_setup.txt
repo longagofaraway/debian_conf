@@ -80,3 +80,9 @@ cp 'thisrepo'/myxfce4.theme ~/.local/share/xfce4/terminal/colorschemes
 sudo cp /usr/lib/git-core/git-subtree /usr/local/libexec/git-core/
 ## prevent the creation of default folders
 sed -i s/enabled=True/enabled=False/g /etc/xdg/user-dirs.conf
+
+## sound
+# xfce4-volumed for controlling volue
+# pavucontrol if headphones don't work, if xfce4-volumed doesn't change the sound, set sound card as default fallback (problems when docked)
+
+# multiple monitors when docked - autorandr
